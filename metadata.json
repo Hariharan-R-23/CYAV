@@ -1,0 +1,8 @@
+{
+  "name": "Chennai Youth Assembly",
+  "description": "A premium recruitment and information portal for Chennai Youth Assembly Season V (The Visionary CYA V) under Street Cause.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
