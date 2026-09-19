@@ -213,6 +213,6 @@ export const CONTACTS = [
     name: "Ahanya U S",
     role: "SPOC",
     phone: "+91 9677009149",
-    image: ""
+    image: "/images/spoc.jpeg"
   }
 ];
