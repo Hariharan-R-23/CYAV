@@ -97,9 +97,12 @@ const Footer: React.FC = () => {
         <div className="text-center py-24 border-y border-zinc-900 mb-20">
            <p className="text-zinc-500 text-[10px] font-black uppercase tracking-[0.5em] mb-8">Ready to join the movement?</p>
            <a 
-              href={URL_MEMBER_FORM}
-              target="_blank"
-              className="group relative inline-block px-14 py-5 bg-white text-black font-black uppercase tracking-[0.3em] text-[11px] hover:bg-red-600 hover:text-white transition-all transform hover:-translate-y-1 shadow-2xl"
+              href="#register"
+              onClick={(e) => {
+                e.preventDefault();
+                document.querySelector('#register')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+              className="group relative inline-block px-14 py-5 bg-white text-black font-black uppercase tracking-[0.3em] text-[11px] hover:bg-red-600 hover:text-white transition-all transform hover:-translate-y-1 shadow-2xl cursor-pointer"
             >
               Become a Member Now
             </a>

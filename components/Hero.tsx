@@ -71,13 +71,15 @@ const Hero: React.FC = () => {
         {/* Primary Call to Action */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10 max-w-md mx-auto">
           <a 
-            href={URL_MEMBER_FORM}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-full sm:w-auto px-10 py-4 bg-red-600 text-white font-black uppercase tracking-widest text-xs hover:bg-white hover:text-black smooth-transition border border-red-600 shadow-xl shadow-red-600/30 active:scale-95 inline-flex items-center justify-center gap-3 group"
+            href="#register"
+            onClick={(e) => {
+              e.preventDefault();
+              document.querySelector('#register')?.scrollIntoView({ behavior: 'smooth' });
+            }}
+            className="w-full sm:w-auto px-10 py-4 bg-red-600 text-white font-black uppercase tracking-widest text-xs hover:bg-white hover:text-black smooth-transition border border-red-600 shadow-xl shadow-red-600/30 active:scale-95 inline-flex items-center justify-center gap-3 group cursor-pointer"
           >
             <span>Register as Member</span>
-            <i className="fa-solid fa-arrow-up-right-from-square text-[10px] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
+            <i className="fa-solid fa-arrow-down text-[10px] group-hover:translate-y-0.5 transition-transform"></i>
           </a>
           <a 
             href="#assembly"

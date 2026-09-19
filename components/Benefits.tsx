@@ -1,6 +1,6 @@
-
 import React from 'react';
-import { RECRUITMENT_POINTS, URL_MEMBER_FORM } from '../constants';
+import { RECRUITMENT_POINTS } from '../constants';
+import RegistrationEmbed from './RegistrationEmbed';
 
 const Benefits: React.FC = () => {
   return (
@@ -37,16 +37,12 @@ const Benefits: React.FC = () => {
         ))}
       </div>
 
-      <div className="mt-16 text-center">
-        <a
-          href={URL_MEMBER_FORM}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-3 px-10 py-4 bg-red-600 hover:bg-white hover:text-black text-white text-xs font-black uppercase tracking-widest smooth-transition shadow-lg shadow-red-600/30 active:scale-95"
-        >
-          <span>Join CYA Season V • Register as Member</span>
-          <i className="fa-solid fa-arrow-right text-[10px]"></i>
-        </a>
+      {/* Inline Razorpay Registration Form */}
+      <div className="mt-20">
+        <h3 className="text-2xl sm:text-3xl font-black uppercase tracking-widest text-red-600 text-center mb-8">
+          REGISTER HERE
+        </h3>
+        <RegistrationEmbed id="register" />
       </div>
     </div>
   );

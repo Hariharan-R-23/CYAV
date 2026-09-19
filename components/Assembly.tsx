@@ -137,10 +137,12 @@ const Assembly: React.FC = () => {
 
               <div className="mt-8 pt-6 border-t border-zinc-900">
                 <a
-                  href={URL_MEMBER_FORM}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full py-4 bg-red-600 text-white font-black uppercase tracking-widest text-xs hover:bg-white hover:text-black smooth-transition text-center block shadow-lg shadow-red-600/20"
+                  href="#register"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    document.querySelector('#register')?.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                  className="w-full py-4 bg-red-600 text-white font-black uppercase tracking-widest text-xs hover:bg-white hover:text-black smooth-transition text-center block shadow-lg shadow-red-600/20 cursor-pointer"
                 >
                   Pay Registration Fee ({EVENT_DETAILS.registrationFee})
                 </a>
@@ -218,13 +220,15 @@ const Assembly: React.FC = () => {
               <h3 className="text-2xl font-black uppercase text-white">Full Day Assembly Schedule</h3>
             </div>
             <a
-              href={URL_MEMBER_FORM}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-6 py-3 bg-red-600 text-white font-black text-xs uppercase tracking-widest hover:bg-white hover:text-black smooth-transition inline-flex items-center gap-2 self-start md:self-auto"
+              href="#register"
+              onClick={(e) => {
+                e.preventDefault();
+                document.querySelector('#register')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+              className="px-6 py-3 bg-red-600 text-white font-black text-xs uppercase tracking-widest hover:bg-white hover:text-black smooth-transition inline-flex items-center gap-2 self-start md:self-auto cursor-pointer"
             >
               <span>Register Now</span>
-              <i className="fa-solid fa-arrow-right text-[10px]"></i>
+              <i className="fa-solid fa-arrow-down text-[10px]"></i>
             </a>
           </div>
 

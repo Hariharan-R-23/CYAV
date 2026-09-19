@@ -88,10 +88,9 @@ const Header: React.FC<HeaderProps> = ({ isScrolled }) => {
           </nav>
 
           <a 
-            href={URL_MEMBER_FORM}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-red-600 hover:bg-white hover:text-black text-white px-4 py-2 sm:px-6 sm:py-2.5 rounded-sm font-black text-[10px] sm:text-[11px] uppercase tracking-widest transition-all shadow-lg shadow-red-600/25 active:scale-95 whitespace-nowrap"
+            href="#register"
+            onClick={(e) => handleNavClick(e, '#register')}
+            className="bg-red-600 hover:bg-white hover:text-black text-white px-4 py-2 sm:px-6 sm:py-2.5 rounded-sm font-black text-[10px] sm:text-[11px] uppercase tracking-widest transition-all shadow-lg shadow-red-600/25 active:scale-95 whitespace-nowrap cursor-pointer"
           >
             Become a member
           </a>
