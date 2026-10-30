@@ -1,8 +1,68 @@
 
 export const URL_MEMBER_FORM = "https://pages.razorpay.com/pl_TO8p6U8MNF4F3l/view";
 export const URL_RAISE_FUNDS = "https://pages.razorpay.com/pl_TO8jqeO4gcjFMI/view";
+export const YOUTUBE_STREAM_URL = "https://www.youtube.com/live/DhhztOHedqw?si=y8gqK7RrGrYCbNEY";
+export const YOUTUBE_VIDEO_ID = "DhhztOHedqw";
 export const GENERAL_EMAIL = "chennaiyouthassembly@gmail.com";
 export const SPONSOR_EMAIL = "sponsorship.scchn@gmail.com";
+
+export const PROJECT_LEADERSHIP = [
+  {
+    name: "B Sahasra",
+    role: "Vice Chair of Projects",
+    sdg: "Clean Water and Sanitation",
+    sdgNum: "SDG 6",
+    color: "from-cyan-500/20 to-blue-600/20",
+    border: "border-cyan-500/40",
+    badge: "text-cyan-400 bg-cyan-950/40 border-cyan-800/60"
+  },
+  {
+    name: "Sri ram S",
+    role: "Vice Chair of Projects",
+    sdg: "Decent Work and Economic Growth",
+    sdgNum: "SDG 8",
+    color: "from-amber-500/20 to-red-600/20",
+    border: "border-amber-500/40",
+    badge: "text-amber-400 bg-amber-950/40 border-amber-800/60"
+  },
+  {
+    name: "Tanushree Jaiganesh",
+    role: "Chair of Projects",
+    sdg: "Project Directorate",
+    sdgNum: "Lead",
+    highlight: true,
+    color: "from-red-600/25 to-rose-700/25",
+    border: "border-red-500/60",
+    badge: "text-red-400 bg-red-950/50 border-red-700/70"
+  },
+  {
+    name: "Poornima K",
+    role: "Vice Chair of Projects",
+    sdg: "No Poverty",
+    sdgNum: "SDG 1",
+    color: "from-rose-500/20 to-red-700/20",
+    border: "border-rose-500/40",
+    badge: "text-rose-400 bg-rose-950/40 border-rose-800/60"
+  },
+  {
+    name: "Sreeya Srikanth",
+    role: "Vice Chair of Projects",
+    sdg: "Quality Education",
+    sdgNum: "SDG 4",
+    color: "from-red-500/20 to-orange-600/20",
+    border: "border-red-500/40",
+    badge: "text-red-400 bg-red-950/40 border-red-800/60"
+  }
+];
+
+export const GALLERY_IMAGES = [
+  {
+    url: "/images/gallery/cop-vcop.jpg",
+    fallbackUrl: "/images/cop-and-vcop.jpg",
+    title: "Chair & Vice Chairs of Projects — Season V Phase I",
+    caption: "The project directorate leading SDG solutions across Chennai"
+  }
+];
 
 export const EVENT_DETAILS = {
   name: "Chennai Youth Assembly - Season V",
@@ -13,6 +73,7 @@ export const EVENT_DETAILS = {
   city: "Chennai, Tamil Nadu",
   registrationFee: "₹100",
   selectionFee: "₹599",
+  isEventOver: true,
   selectionBenefits: [
     "Complete Food Hospitality: Breakfast, Lunch, and Evening Snacks",
     "Official Assembly Placards & Member Identity Credential",
@@ -121,6 +182,18 @@ export const FEATURED_PROJECTS = [
 
 export const DISTINGUISHED_GUESTS = [
   {
+    name: "Mr. NTR Swamy",
+    title: "Head of Programmes & Strategy, Shiv Nadar Foundation; Former Teach For India Educator",
+    season: "CYA Season V Phase I",
+    bio: "Over a decade of leadership across education and social impact, dedicated to youth voice and dialogue-led transformation."
+  },
+  {
+    name: "Ms. Agathya Selvakumar",
+    title: "Founder & CEO, FINNMIN; Financial Educator, Author & Academic Mentor",
+    season: "CYA Season V Phase I",
+    bio: "Pioneering financial education and business strategy; mentoring future innovators at Mar Ephraem College of Engineering & Technology."
+  },
+  {
     name: "Dr. Kanimozhi NVN Somu",
     title: "Member of Parliament (Rajya Sabha), DMK Leader",
     season: "CYA IV Phase I"
@@ -210,9 +283,9 @@ export const CONTACTS = [
     image: "/images/chair-execution.png"
   },
   {
-    name: "Ahanya U S",
+    name: "Jessica Jane J",
     role: "SPOC",
-    phone: "+91 9677009149",
+    phone: "+91 9150424565",
     image: "/images/spoc.jpeg"
   }
 ];

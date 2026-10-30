@@ -2,10 +2,11 @@
 import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
+import Gallery from './components/Gallery';
+import Leadership from './components/Leadership';
 import About from './components/About';
 import Assembly from './components/Assembly';
 import Impact from './components/Impact';
-import Leadership from './components/Leadership';
 import Benefits from './components/Benefits';
 import Footer from './components/Footer';
 
@@ -27,6 +28,16 @@ const App: React.FC = () => {
       <main>
         <section id="home" className="scroll-mt-24">
           <Hero />
+        </section>
+
+        {/* Gallery at top */}
+        <section id="gallery" className="py-20 px-4 border-t border-zinc-900 scroll-mt-24 bg-zinc-950/40">
+          <Gallery />
+        </section>
+
+        {/* Leadership (Chairs and COP/VCOPs moved up) */}
+        <section id="leadership" className="py-24 px-4 bg-zinc-950/70 border-t border-zinc-900 scroll-mt-24">
+          <Leadership />
         </section>
 
         <section id="about" className="py-24 px-4 border-t border-zinc-900 scroll-mt-24">
@@ -51,10 +62,6 @@ const App: React.FC = () => {
 
         <section id="impact" className="py-24 px-4 border-t border-zinc-900 scroll-mt-24">
           <Impact />
-        </section>
-
-        <section id="leadership" className="py-24 px-4 bg-zinc-950/50 border-t border-zinc-900 scroll-mt-24">
-          <Leadership />
         </section>
 
         <section id="benefits" className="py-24 px-4 border-t border-zinc-900 scroll-mt-24">

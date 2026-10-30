@@ -37,11 +37,19 @@ const Benefits: React.FC = () => {
         ))}
       </div>
 
-      {/* Inline Razorpay Registration Form */}
+      {/* Assembly Recording Player */}
       <div className="mt-20">
-        <h3 className="text-2xl sm:text-3xl font-black uppercase tracking-widest text-red-600 text-center mb-8">
-          REGISTER HERE
-        </h3>
+        <div className="text-center mb-8">
+          <span className="text-red-600 text-[10px] font-black uppercase tracking-[0.35em] block mb-2">
+            Official Convocation Archive
+          </span>
+          <h3 className="text-2xl sm:text-3xl font-black uppercase tracking-widest text-white">
+            WATCH THE <span className="text-red-600 italic">ASSEMBLY RECORDING</span>
+          </h3>
+          <p className="text-zinc-500 text-xs uppercase tracking-wider mt-2">
+            The event has concluded. Relive the proceedings, discussions, and visionary addresses below.
+          </p>
+        </div>
         <RegistrationEmbed id="register" />
       </div>
     </div>

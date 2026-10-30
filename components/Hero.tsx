@@ -21,11 +21,11 @@ const Hero: React.FC = () => {
       </div>
 
       <div className="container mx-auto px-4 relative z-10 text-center max-w-5xl">
-        {/* Recruitment Status Pill */}
+        {/* Event Status Pill */}
         <div className="inline-flex items-center gap-2.5 px-5 py-2 mb-8 border border-red-600/30 bg-red-950/20 backdrop-blur-md rounded-full shadow-lg shadow-red-950/30">
-          <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
-          <span className="text-red-400 text-[10px] sm:text-xs font-black tracking-[0.35em] uppercase">
-            Phase I Member Recruitments Open
+          <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          <span className="text-zinc-300 text-[10px] sm:text-xs font-black tracking-[0.35em] uppercase">
+            Season V Phase I Concluded • Full Recording Available
           </span>
         </div>
         
@@ -63,8 +63,8 @@ const Hero: React.FC = () => {
             <p className="text-xs sm:text-sm font-black text-white mt-1">{EVENT_DETAILS.time}</p>
           </div>
           <div className="bg-zinc-950/80 border border-zinc-900 px-4 py-3 rounded-sm backdrop-blur-sm">
-            <p className="text-[9px] font-black uppercase text-zinc-500 tracking-widest">Registration Fee</p>
-            <p className="text-xs sm:text-sm font-black text-emerald-400 mt-1">{EVENT_DETAILS.registrationFee}</p>
+            <p className="text-[9px] font-black uppercase text-zinc-500 tracking-widest">Status</p>
+            <p className="text-xs sm:text-sm font-black text-emerald-400 mt-1">Phase I Concluded • Phase II Soon</p>
           </div>
         </div>
 
@@ -78,8 +78,8 @@ const Hero: React.FC = () => {
             }}
             className="w-full sm:w-auto px-10 py-4 bg-red-600 text-white font-black uppercase tracking-widest text-xs hover:bg-white hover:text-black smooth-transition border border-red-600 shadow-xl shadow-red-600/30 active:scale-95 inline-flex items-center justify-center gap-3 group cursor-pointer"
           >
-            <span>Register as Member</span>
-            <i className="fa-solid fa-arrow-down text-[10px] group-hover:translate-y-0.5 transition-transform"></i>
+            <i className="fa-solid fa-play text-xs"></i>
+            <span>Watch the Recording</span>
           </a>
           <a 
             href="#assembly"

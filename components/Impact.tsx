@@ -159,29 +159,53 @@ const Impact: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {DISTINGUISHED_GUESTS.map((guest, idx) => (
-            <div
-              key={idx}
-              className="bg-zinc-950 border border-zinc-900 p-6 hover:border-zinc-700 smooth-transition flex flex-col justify-between"
-            >
-              <div>
-                <span className="text-[9px] font-black uppercase tracking-widest text-red-500 mb-2 block">
-                  {guest.season}
-                </span>
-                <h4 className="text-sm font-black text-white uppercase tracking-wider mb-2">
-                  {guest.name}
-                </h4>
-                <p className="text-xs text-zinc-400 leading-relaxed font-medium">
-                  {guest.title}
-                </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          {DISTINGUISHED_GUESTS.map((guest: any, idx) => {
+            const isSeasonV = guest.season.includes('Season V');
+            return (
+              <div
+                key={idx}
+                className={`bg-zinc-950 border p-6 smooth-transition flex flex-col justify-between relative overflow-hidden ${
+                  isSeasonV
+                    ? 'border-red-600/50 hover:border-red-500 shadow-lg shadow-red-950/20'
+                    : 'border-zinc-900 hover:border-zinc-700'
+                }`}
+              >
+                {isSeasonV && (
+                  <div className="absolute top-0 right-0 w-24 h-24 bg-red-600/10 rounded-full blur-2xl pointer-events-none"></div>
+                )}
+                <div>
+                  <div className="flex items-center justify-between mb-2">
+                    <span className={`text-[9px] font-black uppercase tracking-widest block ${
+                      isSeasonV ? 'text-red-400 font-bold' : 'text-zinc-500'
+                    }`}>
+                      {guest.season}
+                    </span>
+                    {isSeasonV && (
+                      <span className="px-2 py-0.5 bg-red-950/80 border border-red-800 text-red-400 text-[8px] font-black uppercase tracking-widest rounded">
+                        Chief Guest
+                      </span>
+                    )}
+                  </div>
+                  <h4 className="text-sm sm:text-base font-black text-white uppercase tracking-wider mb-2">
+                    {guest.name}
+                  </h4>
+                  <p className="text-xs text-zinc-300 leading-relaxed font-medium">
+                    {guest.title}
+                  </p>
+                  {guest.bio && (
+                    <p className="text-[11px] text-zinc-500 mt-2.5 leading-relaxed italic border-l-2 border-red-600/40 pl-2.5">
+                      "{guest.bio}"
+                    </p>
+                  )}
+                </div>
+                <div className="mt-5 pt-3 border-t border-zinc-900/60 flex items-center gap-2 text-zinc-500 text-[10px] font-bold uppercase tracking-wider">
+                  <i className="fa-solid fa-certificate text-red-600 text-xs"></i>
+                  <span>Distinguished Convocation Guest</span>
+                </div>
               </div>
-              <div className="mt-4 pt-3 border-t border-zinc-900/60 flex items-center gap-2 text-zinc-600 text-[10px] font-bold uppercase tracking-wider">
-                <i className="fa-solid fa-certificate text-red-600 text-xs"></i>
-                <span>Assembly Guest</span>
-              </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </div>

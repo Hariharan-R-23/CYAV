@@ -95,17 +95,26 @@ const Footer: React.FC = () => {
 
         {/* Primary CTA Section */}
         <div className="text-center py-24 border-y border-zinc-900 mb-20">
-           <p className="text-zinc-500 text-[10px] font-black uppercase tracking-[0.5em] mb-8">Ready to join the movement?</p>
-           <a 
-              href="#register"
-              onClick={(e) => {
-                e.preventDefault();
-                document.querySelector('#register')?.scrollIntoView({ behavior: 'smooth' });
-              }}
-              className="group relative inline-block px-14 py-5 bg-white text-black font-black uppercase tracking-[0.3em] text-[11px] hover:bg-red-600 hover:text-white transition-all transform hover:-translate-y-1 shadow-2xl cursor-pointer"
-            >
-              Become a Member Now
-            </a>
+           <p className="text-zinc-500 text-[10px] font-black uppercase tracking-[0.5em] mb-4">The Crown Jewel of Street Cause Chennai</p>
+           <h3 className="text-2xl sm:text-3xl font-black uppercase tracking-tight text-white mb-8">
+             Experience The CYA Season V Assembly
+           </h3>
+           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+             <a 
+                href="#register"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.querySelector('#register')?.scrollIntoView({ behavior: 'smooth' });
+                }}
+                className="group relative inline-flex items-center gap-3 px-12 py-5 bg-red-600 text-white font-black uppercase tracking-[0.3em] text-[11px] hover:bg-white hover:text-black transition-all transform hover:-translate-y-1 shadow-2xl cursor-pointer"
+              >
+                <i className="fa-solid fa-play text-xs"></i>
+                <span>Watch the Full Recording</span>
+              </a>
+           </div>
+           <p className="text-zinc-600 text-[10px] font-bold uppercase tracking-widest mt-4">
+             Phase II Registrations Will Open Soon
+           </p>
         </div>
 
         {/* OC Special Section */}

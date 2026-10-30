@@ -93,13 +93,13 @@ const Assembly: React.FC = () => {
                     </div>
                     <div>
                       <div className="flex items-center gap-3">
-                        <h4 className="text-sm font-black uppercase text-white tracking-wider">Register for Evaluation</h4>
-                        <span className="px-2 py-0.5 bg-emerald-950 border border-emerald-800 text-emerald-400 text-[10px] font-black">
-                          {EVENT_DETAILS.registrationFee}
+                        <h4 className="text-sm font-black uppercase text-white tracking-wider">Candidate Registration</h4>
+                        <span className="px-2 py-0.5 bg-zinc-800 border border-zinc-700 text-zinc-300 text-[10px] font-black">
+                          Phase I Concluded
                         </span>
                       </div>
                       <p className="text-xs text-zinc-400 mt-1 leading-relaxed">
-                        Submit candidate credentials and pay the initial registration fee of Rs. 100 to enter the screening pool.
+                        Submit candidate credentials and personal profile to enter the delegate screening pool for assembly evaluation.
                       </p>
                     </div>
                   </div>
@@ -124,11 +124,11 @@ const Assembly: React.FC = () => {
                       <div className="flex items-center gap-3">
                         <h4 className="text-sm font-black uppercase text-white tracking-wider">On Selection Confirmation</h4>
                         <span className="px-2 py-0.5 bg-red-950 border border-red-800 text-red-400 text-[10px] font-black">
-                          {EVENT_DETAILS.selectionFee}
+                          Phase II Next
                         </span>
                       </div>
                       <p className="text-xs text-zinc-400 mt-1 leading-relaxed">
-                        Selected candidates pay Rs. 599 delegate fee, unlocking comprehensive assembly hospitality, kits, and member credentials.
+                        Selected candidates gain delegate allocation, unlocking comprehensive assembly hospitality, kits, and member credentials.
                       </p>
                     </div>
                   </div>
@@ -142,9 +142,10 @@ const Assembly: React.FC = () => {
                     e.preventDefault();
                     document.querySelector('#register')?.scrollIntoView({ behavior: 'smooth' });
                   }}
-                  className="w-full py-4 bg-red-600 text-white font-black uppercase tracking-widest text-xs hover:bg-white hover:text-black smooth-transition text-center block shadow-lg shadow-red-600/20 cursor-pointer"
+                  className="w-full py-4 bg-red-600 text-white font-black uppercase tracking-widest text-xs hover:bg-white hover:text-black smooth-transition text-center block shadow-lg shadow-red-600/20 cursor-pointer flex items-center justify-center gap-2"
                 >
-                  Pay Registration Fee ({EVENT_DETAILS.registrationFee})
+                  <i className="fa-solid fa-play text-[10px]"></i>
+                  <span>Watch Assembly Recording</span>
                 </a>
               </div>
             </div>

@@ -51,6 +51,20 @@ const Header: React.FC<HeaderProps> = ({ isScrolled }) => {
         <div className="flex items-center gap-4 sm:gap-7">
           <nav className="hidden lg:flex items-center gap-6 xl:gap-8">
             <a 
+              href="#gallery" 
+              onClick={(e) => handleNavClick(e, '#gallery')}
+              className="text-[11px] font-black uppercase tracking-[0.2em] text-zinc-400 hover:text-white transition-colors cursor-pointer"
+            >
+              Gallery
+            </a>
+            <a 
+              href="#leadership" 
+              onClick={(e) => handleNavClick(e, '#leadership')}
+              className="text-[11px] font-black uppercase tracking-[0.2em] text-zinc-400 hover:text-white transition-colors cursor-pointer"
+            >
+              Leadership
+            </a>
+            <a 
               href="#about" 
               onClick={(e) => handleNavClick(e, '#about')}
               className="text-[11px] font-black uppercase tracking-[0.2em] text-zinc-400 hover:text-white transition-colors cursor-pointer"
@@ -72,13 +86,6 @@ const Header: React.FC<HeaderProps> = ({ isScrolled }) => {
               Impact
             </a>
             <a 
-              href="#leadership" 
-              onClick={(e) => handleNavClick(e, '#leadership')}
-              className="text-[11px] font-black uppercase tracking-[0.2em] text-zinc-400 hover:text-white transition-colors cursor-pointer"
-            >
-              Leadership
-            </a>
-            <a 
               href="#benefits" 
               onClick={(e) => handleNavClick(e, '#benefits')}
               className="text-[11px] font-black uppercase tracking-[0.2em] text-zinc-400 hover:text-white transition-colors cursor-pointer"
@@ -90,9 +97,10 @@ const Header: React.FC<HeaderProps> = ({ isScrolled }) => {
           <a 
             href="#register"
             onClick={(e) => handleNavClick(e, '#register')}
-            className="bg-red-600 hover:bg-white hover:text-black text-white px-4 py-2 sm:px-6 sm:py-2.5 rounded-sm font-black text-[10px] sm:text-[11px] uppercase tracking-widest transition-all shadow-lg shadow-red-600/25 active:scale-95 whitespace-nowrap cursor-pointer"
+            className="bg-red-600 hover:bg-white hover:text-black text-white px-4 py-2 sm:px-6 sm:py-2.5 rounded-sm font-black text-[10px] sm:text-[11px] uppercase tracking-widest transition-all shadow-lg shadow-red-600/25 active:scale-95 whitespace-nowrap cursor-pointer flex items-center gap-1.5"
           >
-            Become a member
+            <i className="fa-solid fa-play text-[10px]"></i>
+            <span>Watch Recording</span>
           </a>
         </div>
       </div>
