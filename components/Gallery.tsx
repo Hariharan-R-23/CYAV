@@ -1,11 +1,5 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect } from 'react';
 import { GALLERY_IMAGES } from '../constants';
-
-// Automatically import all images placed in public/images/gallery
-const autoGalleryModules = import.meta.glob(
-  '/public/images/gallery/*.{jpg,jpeg,png,JPG,JPEG,PNG}',
-  { eager: true, as: 'url' }
-);
 
 interface GalleryItem {
   url: string;
@@ -19,30 +13,7 @@ const Gallery: React.FC = () => {
   const [isGridModalOpen, setIsGridModalOpen] = useState(false);
   const [activePreviewImage, setActivePreviewImage] = useState<string | null>(null);
 
-  // Combine dynamic folder photos with default ones
-  const images: GalleryItem[] = useMemo(() => {
-    const dynamicKeys = Object.keys(autoGalleryModules);
-    if (dynamicKeys.length > 0) {
-      return dynamicKeys.map((key, idx) => {
-        const rawUrl = autoGalleryModules[key] as string;
-        // Strip /public prefix if needed so it serves from root in Vite
-        const cleanUrl = rawUrl.replace(/^\/public/, '');
-        const filename = key.split('/').pop()?.replace(/\.[^/.]+$/, '') || `Photo ${idx + 1}`;
-        const isCop = key.toLowerCase().includes('cop');
-
-        return {
-          url: cleanUrl,
-          title: isCop
-            ? 'Chair & Vice Chairs of Projects — Season V Phase I'
-            : `Assembly Convocation Moment ${idx + 1}`,
-          caption: isCop
-            ? 'The project directorate leading SDG solutions across Chennai'
-            : 'CYA Season V Phase I • IITM Research Park'
-        };
-      });
-    }
-    return GALLERY_IMAGES;
-  }, []);
+  const images: GalleryItem[] = GALLERY_IMAGES;
 
   const nextSlide = () => {
     setCurrentIndex((prev) => (prev + 1) % images.length);
@@ -194,6 +165,8 @@ const Gallery: React.FC = () => {
               >
                 <img
                   src={item.url}
+                  loading="lazy"
+                  decoding="async"
                   onError={(e) => {
                     const target = e.currentTarget;
                     if (item.fallbackUrl && target.src !== item.fallbackUrl) {
@@ -249,6 +222,8 @@ const Gallery: React.FC = () => {
                 <div className="relative aspect-video overflow-hidden bg-black">
                   <img
                     src={item.url}
+                    loading="lazy"
+                    decoding="async"
                     onError={(e) => {
                       const target = e.currentTarget;
                       if (item.fallbackUrl && target.src !== item.fallbackUrl) {

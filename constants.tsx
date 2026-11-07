@@ -61,8 +61,329 @@ export const GALLERY_IMAGES = [
     fallbackUrl: "/images/cop-and-vcop.jpg",
     title: "Chair & Vice Chairs of Projects — Season V Phase I",
     caption: "The project directorate leading SDG solutions across Chennai"
-  }
+  },
+  {
+    url: "/images/gallery/DSC00001.JPG",
+    title: "Assembly Convocation Moment 2",
+    caption: "CYA Season V Phase I • IITM Research Park"
+  },
+  {
+    url: "/images/gallery/DSC00064.JPG",
+    title: "Assembly Convocation Moment 3",
+    caption: "CYA Season V Phase I • IITM Research Park"
+  },
+  {
+    url: "/images/gallery/DSC00127.JPG",
+    title: "Assembly Convocation Moment 4",
+    caption: "CYA Season V Phase I • IITM Research Park"
+  },
+  {
+    url: "/images/gallery/DSC00140.JPG",
+    title: "Assembly Convocation Moment 5",
+    caption: "CYA Season V Phase I • IITM Research Park"
+  },
+  {
+    url: "/images/gallery/DSC00195.JPG",
+    title: "Assembly Convocation Moment 6",
+    caption: "CYA Season V Phase I • IITM Research Park"
+  },
+  {
+    url: "/images/gallery/DSC00235.JPG",
+    title: "Assembly Convocation Moment 7",
+    caption: "CYA Season V Phase I • IITM Research Park"
+  },
+  {
+    url: "/images/gallery/DSC00254.JPG",
+    title: "Assembly Convocation Moment 8",
+    caption: "CYA Season V Phase I • IITM Research Park"
+  },
+  {
+    url: "/images/gallery/DSC00283.JPG",
+    title: "Assembly Convocation Moment 9",
+    caption: "CYA Season V Phase I • IITM Research Park"
+  },
+  {
+    url: "/images/gallery/DSC00296.JPG",
+    title: "Assembly Convocation Moment 10",
+    caption: "CYA Season V Phase I • IITM Research Park"
+  },
+  {
+    url: "/images/gallery/DSC00336.JPG",
+    title: "Assembly Convocation Moment 11",
+    caption: "CYA Season V Phase I • IITM Research Park"
+  },
+  {
+    url: "/images/gallery/DSC00415.JPG",
+    title: "Assembly Convocation Moment 12",
+    caption: "CYA Season V Phase I • IITM Research Park"
+  },
+  {
+    url: "/images/gallery/DSC00437.JPG",
+    title: "Assembly Convocation Moment 13",
+    caption: "CYA Season V Phase I • IITM Research Park"
+  },
+  {
+    url: "/images/gallery/DSC00458.JPG",
+    title: "Assembly Convocation Moment 14",
+    caption: "CYA Season V Phase I • IITM Research Park"
+  },
+  {
+    url: "/images/gallery/DSC00477.JPG",
+    title: "Assembly Convocation Moment 15",
+    caption: "CYA Season V Phase I • IITM Research Park"
+  },
+  {
+    url: "/images/gallery/DSC00504.JPG",
+    title: "Assembly Convocation Moment 16",
+    caption: "CYA Season V Phase I • IITM Research Park"
+  },
+  {
+    url: "/images/gallery/DSC00623.JPG",
+    title: "Assembly Convocation Moment 17",
+    caption: "CYA Season V Phase I • IITM Research Park"
+  },
+  {
+    url: "/images/gallery/DSC00646.JPG",
+    title: "Assembly Convocation Moment 18",
+    caption: "CYA Season V Phase I • IITM Research Park"
+  },
+  {
+    url: "/images/gallery/DSC00653.JPG",
+    title: "Assembly Convocation Moment 19",
+    caption: "CYA Season V Phase I • IITM Research Park"
+  },
+  {
+    url: "/images/gallery/DSC00654.JPG",
+    title: "Assembly Convocation Moment 20",
+    caption: "CYA Season V Phase I • IITM Research Park"
+  },
+  {
+    url: "/images/gallery/DSC00656.JPG",
+    title: "Assembly Convocation Moment 21",
+    caption: "CYA Season V Phase I • IITM Research Park"
+  },
+  {
+    url: "/images/gallery/DSC09958.JPG",
+    title: "Assembly Convocation Moment 22",
+    caption: "CYA Season V Phase I • IITM Research Park"
+  },
+  {
+    url: "/images/gallery/DSC09982.JPG",
+    title: "Assembly Convocation Moment 23",
+    caption: "CYA Season V Phase I • IITM Research Park"
+  },
+  {
+    url: "/images/gallery/IMG_20261008_175802.jpg",
+    title: "Assembly Convocation Moment 24",
+    caption: "CYA Season V Phase I • IITM Research Park"
+  },
+  {
+    url: "/images/gallery/IMG_7741.JPG",
+    title: "Assembly Convocation Moment 25",
+    caption: "CYA Season V Phase I • IITM Research Park"
+  },
+  {
+    url: "/images/gallery/IMG_8033.JPG",
+    title: "Assembly Convocation Moment 26",
+    caption: "CYA Season V Phase I • IITM Research Park"
+  },
+  {
+    url: "/images/gallery/IMG_8051.JPG",
+    title: "Assembly Convocation Moment 27",
+    caption: "CYA Season V Phase I • IITM Research Park"
+  },
+  {
+    url: "/images/gallery/IMG_8086.JPG",
+    title: "Assembly Convocation Moment 28",
+    caption: "CYA Season V Phase I • IITM Research Park"
+  },
+  {
+    url: "/images/gallery/IMG_8097.JPG",
+    title: "Assembly Convocation Moment 29",
+    caption: "CYA Season V Phase I • IITM Research Park"
+  },
+  {
+    url: "/images/gallery/IMG_8102.JPG",
+    title: "Assembly Convocation Moment 30",
+    caption: "CYA Season V Phase I • IITM Research Park"
+  },
+  {
+    url: "/images/gallery/IMG_8251.JPG",
+    title: "Assembly Convocation Moment 31",
+    caption: "CYA Season V Phase I • IITM Research Park"
+  },
+  {
+    url: "/images/gallery/P1004937.JPG",
+    title: "Assembly Convocation Moment 32",
+    caption: "CYA Season V Phase I • IITM Research Park"
+  },
+  {
+    url: "/images/gallery/P1004969.JPG",
+    title: "Assembly Convocation Moment 33",
+    caption: "CYA Season V Phase I • IITM Research Park"
+  },
+  {
+    url: "/images/gallery/P1005080.JPG",
+    title: "Assembly Convocation Moment 34",
+    caption: "CYA Season V Phase I • IITM Research Park"
+  },
+  {
+    url: "/images/gallery/P1005134.JPG",
+    title: "Assembly Convocation Moment 35",
+    caption: "CYA Season V Phase I • IITM Research Park"
+  },
+  {
+    url: "/images/gallery/P1005336.JPG",
+    title: "Assembly Convocation Moment 36",
+    caption: "CYA Season V Phase I • IITM Research Park"
+  },
+  {
+    url: "/images/gallery/P1005580.JPG",
+    title: "Assembly Convocation Moment 37",
+    caption: "CYA Season V Phase I • IITM Research Park"
+  },
+  {
+    url: "/images/gallery/P1005681.JPG",
+    title: "Assembly Convocation Moment 38",
+    caption: "CYA Season V Phase I • IITM Research Park"
+  },
+  {
+    url: "/images/gallery/P1005829.JPG",
+    title: "Assembly Convocation Moment 39",
+    caption: "CYA Season V Phase I • IITM Research Park"
+  },
+  {
+    url: "/images/gallery/P1005838.JPG",
+    title: "Assembly Convocation Moment 40",
+    caption: "CYA Season V Phase I • IITM Research Park"
+  },
+  {
+    url: "/images/gallery/P1005848.JPG",
+    title: "Assembly Convocation Moment 41",
+    caption: "CYA Season V Phase I • IITM Research Park"
+  },
+  {
+    url: "/images/gallery/P1005864.JPG",
+    title: "Assembly Convocation Moment 42",
+    caption: "CYA Season V Phase I • IITM Research Park"
+  },
+  {
+    url: "/images/gallery/P1005870.JPG",
+    title: "Assembly Convocation Moment 43",
+    caption: "CYA Season V Phase I • IITM Research Park"
+  },
+  {
+    url: "/images/gallery/_DSC6605.JPG",
+    title: "Assembly Convocation Moment 44",
+    caption: "CYA Season V Phase I • IITM Research Park"
+  },
+  {
+    url: "/images/gallery/_DSC6638.JPG",
+    title: "Assembly Convocation Moment 45",
+    caption: "CYA Season V Phase I • IITM Research Park"
+  },
+  {
+    url: "/images/gallery/_DSC6642.JPG",
+    title: "Assembly Convocation Moment 46",
+    caption: "CYA Season V Phase I • IITM Research Park"
+  },
+  {
+    url: "/images/gallery/_DSC6711.JPG",
+    title: "Assembly Convocation Moment 47",
+    caption: "CYA Season V Phase I • IITM Research Park"
+  },
+  {
+    url: "/images/gallery/_DSC6819.JPG",
+    title: "Assembly Convocation Moment 48",
+    caption: "CYA Season V Phase I • IITM Research Park"
+  },
+  {
+    url: "/images/gallery/_DSC6836.JPG",
+    title: "Assembly Convocation Moment 49",
+    caption: "CYA Season V Phase I • IITM Research Park"
+  },
+  {
+    url: "/images/gallery/_DSC6865.JPG",
+    title: "Assembly Convocation Moment 50",
+    caption: "CYA Season V Phase I • IITM Research Park"
+  },
+  {
+    url: "/images/gallery/_DSC6882.JPG",
+    title: "Assembly Convocation Moment 51",
+    caption: "CYA Season V Phase I • IITM Research Park"
+  },
+  {
+    url: "/images/gallery/_DSC7184.JPG",
+    title: "Assembly Convocation Moment 52",
+    caption: "CYA Season V Phase I • IITM Research Park"
+  },
+  {
+    url: "/images/gallery/_DSC7240.JPG",
+    title: "Assembly Convocation Moment 53",
+    caption: "CYA Season V Phase I • IITM Research Park"
+  },
+  {
+    url: "/images/gallery/_DSC7357.JPG",
+    title: "Assembly Convocation Moment 54",
+    caption: "CYA Season V Phase I • IITM Research Park"
+  },
+  {
+    url: "/images/gallery/_DSC7383.JPG",
+    title: "Assembly Convocation Moment 55",
+    caption: "CYA Season V Phase I • IITM Research Park"
+  },
+  {
+    url: "/images/gallery/_DSC7451.JPG",
+    title: "Assembly Convocation Moment 56",
+    caption: "CYA Season V Phase I • IITM Research Park"
+  },
+  {
+    url: "/images/gallery/_DSC7459.JPG",
+    title: "Assembly Convocation Moment 57",
+    caption: "CYA Season V Phase I • IITM Research Park"
+  },
+  {
+    url: "/images/gallery/_DSC7477.JPG",
+    title: "Assembly Convocation Moment 58",
+    caption: "CYA Season V Phase I • IITM Research Park"
+  },
+  {
+    url: "/images/gallery/_DSC7482.JPG",
+    title: "Assembly Convocation Moment 59",
+    caption: "CYA Season V Phase I • IITM Research Park"
+  },
+  {
+    url: "/images/gallery/_DSC7510.JPG",
+    title: "Assembly Convocation Moment 60",
+    caption: "CYA Season V Phase I • IITM Research Park"
+  },
+  {
+    url: "/images/gallery/_DSC7525.JPG",
+    title: "Assembly Convocation Moment 61",
+    caption: "CYA Season V Phase I • IITM Research Park"
+  },
+  {
+    url: "/images/gallery/_DSC7572.JPG",
+    title: "Assembly Convocation Moment 62",
+    caption: "CYA Season V Phase I • IITM Research Park"
+  },
+  {
+    url: "/images/gallery/_DSC7578.JPG",
+    title: "Assembly Convocation Moment 63",
+    caption: "CYA Season V Phase I • IITM Research Park"
+  },
+  {
+    url: "/images/gallery/_DSC7644.JPG",
+    title: "Assembly Convocation Moment 64",
+    caption: "CYA Season V Phase I • IITM Research Park"
+  },
+  {
+    url: "/images/gallery/_DSC7648.JPG",
+    title: "Assembly Convocation Moment 65",
+    caption: "CYA Season V Phase I • IITM Research Park"
+  },
 ];
+
 
 export const EVENT_DETAILS = {
   name: "Chennai Youth Assembly - Season V",
